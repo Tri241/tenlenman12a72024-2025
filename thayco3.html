@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu thầy cô Lớp</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa; /* Màu nền mới */
+            color: #343a40; /* Màu chữ mới */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2d87f0;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .team {
+            margin-top: 30px;
+        }
+        .team h2 {
+            color: #2d87f0;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+        .team-member {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 25px;
+            border: 3px solid #2d87f0;
+            transition: transform 0.3s ease;
+        }
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+        .team-member h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+        .team-member p {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #2c3e50;
+        }
+        footer {
+            background-color: #2d87f0;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Giới thiệu thầy cô Lớp</h1>
+    </header>
+
+    <div class="container">
+        <div class="team">
+            <h2>Giáo viên chủ nhiệm</h2>
+            <div class="team-member">
+                <img src="https://i.imgur.com/R9MHReQ.jpeg" alt="Giáo viên chủ nhiệm">
+                <div>
+                    <h3>Trần Anh Lý</h3>
+                    <p><strong>Chức vụ:</strong> Giáo viên chủ nhiệm</p>
+                    <p><strong>Giới thiệu:</strong> Là người quản lý lớp 12A7</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <h2>Giáo viên dạy Toán</h2>
+            <div class="team-member">
+                <img src="https://i.imgur.com/VfYXVe9_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Giáo viên Toán">
+                <div>
+                    <h3>Lưu Quốc Vũ</h3>
+                    <p><strong>Chức vụ:</strong> Giáo viên bộ môn Toán</p>
+                    <p><strong>Giới thiệu:</strong> Người dạy toán siêu pro, Thầy luôn sẵn sàng giải đáp thắc mắc và giúp đỡ khi chúng em gặp khó khăn trong bài học, kết hợp với ví dụ minh họa thực tế giúp chúng em hiểu sâu hơn về bản chất hiện tượng.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <h2>Giáo viên dạy Văn</h2>
+            <div class="team-member">
+                <img src="https://i.imgur.com/lreVIVa.png" alt="Giáo viên Văn">
+                <div>
+                    <h3>Nguyễn Thị Huê Vân</h3>
+                    <p><strong>Chức vụ:</strong> Giáo viên dạy môn Văn</p>
+                    <p><strong>Giới thiệu:</strong> Cô có phương pháp giảng dạy hiệu quả, giúp chúng em tiếp thu từ vựng và ngữ pháp một cách dễ dàng. Bài giảng luôn sinh động, kết hợp nhiều hình thức học tập như nghe, nói, đọc, viết, giúp chúng em rèn luyện kỹ năng toàn diện.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <h2>Giáo viên bộ môn Vật lý</h2>
+            <div class="team-member">
+                <img src="https://i.imgur.com/jXTSciV_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Giáo viên Vật lý">
+                <div>
+                    <h3>Huỳnh Kiều Viết Lãm</h3>
+                    <p><strong>Chức vụ:</strong> Giáo viên bộ môn Vật Lý</p>
+                    <p><strong>Giới thiệu:</strong> Thầy giảng bài rất logic, rõ ràng và dễ hiểu. Mỗi bài toán đều được phân tích cẩn thận, giúp chúng em nắm vững từng bước giải.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <h2>Giáo viên bộ môn Hóa Học</h2>
+            <div class="team-member">
+                <img src="https://i.imgur.com/RosWUke.png" alt="Giáo viên Hóa học">
+                <div>
+                    <h3>Nguyễn Thị Thanh Nhàn</h3>
+                    <p><strong>Chức vụ:</strong> Giáo viên bộ môn Hóa Học</p>
+                    <p><strong>Giới thiệu:</strong> Những tiết học Hóa học của cô luôn thú vị nhờ các thí nghiệm thực hành sinh động. Việc trực tiếp quan sát và thực hiện các phản ứng hóa học giúp chúng em hiểu bài nhanh hơn và ghi nhớ lâu hơn.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <h2>Giáo viên bộ môn Tiếng Anh</h2>
+            <div class="team-member">
+                <img src="https://i.imgur.com/ke5yEjO.png" alt="Giáo viên Tiếng Anh">
+                <div>
+                    <h3>Nguyễn Thị Thanh Trà</h3>
+                    <p><strong>Chức vụ:</strong> Giáo viên bộ môn Tiếng Anh</p>
+                    <p><strong>Giới thiệu:</strong> Cô có phương pháp giảng dạy hiệu quả, giúp chúng em tiếp thu từ vựng và ngữ pháp một cách dễ dàng. Bài giảng luôn sinh động, kết hợp nhiều hình thức học tập như nghe, nói, đọc, viết, giúp chúng em rèn luyện kỹ năng toàn diện.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thầy cô lớp - Trường THPT Ten-lơ-man</

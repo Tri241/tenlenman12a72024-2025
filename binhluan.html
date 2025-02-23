@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bình luận</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .comment-box {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .comment-box h2 {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .comments-list {
+            margin-top: 10px;
+        }
+        .comment {
+            padding: 8px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            margin-top: 5px;
+            animation: slideIn 0.3s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="comment-box">
+        <h2>&#128172; Bình luận</h2>
+        <textarea id="commentInput" placeholder="Viết bình luận của bạn..."></textarea>
+        <button onclick="addComment()">Gửi</button>
+        <div class="comments-list" id="commentsList"></div>
+    </div>
+
+    <script>
+        function addComment() {
+            const input = document.getElementById("commentInput");
+            const list = document.getElementById("commentsList");
+            if (input.value.trim()) {
+                const comment = document.createElement("div");
+                comment.classList.add("comment");
+                comment.textContent = input.value;
+                list.appendChild(comment);
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành Tựu Của Lớp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .achievement {
+            background: linear-gradient(135deg, #42a5f5, #1565c0);
+            color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .achievement:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        .achievement h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .achievement a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: white;
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .achievement a:hover {
+            background: #f4f4f4;
+            color: #0d47a1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tài liệu học tập của lớp</h1>
+        <div class="achievement">
+            <h2>Ngữ Văn</h2>
+            <a href="https://thuvienhoclieu.com/de-cuong-on-tap-cuoi-hoc-ky-1-ngu-van-12-ket-noi-tri-thuc-2024-2025/">Đề ôn giữa kì môn Văn</a>
+        </div>
+        <div class="achievement">
+            <h2>Toán</h2>
+            <a href="https://montoan.com.vn/vo-bai-tap-mon-toan-12">Đề ôn giữa kì môn Toán</a>
+        </div>
+        <div class="achievement">
+            <h2>Vật Lý</h2>
+            <a href="https://www.bing.com/search?q=v%E1%BA%ADt%20l%C3%BD%2012%20pdf%20b%C3%A0i%20t%E1%BA%ADp%20&qs=n&form=QBRE&sp=-1&lq=0&pq=v%E1%BA%ADt%20l%C3%BD%2012%20pdf%20b%C3%A0i%20t%E1%BA%A1p&sc=0-21&sk=&cvid=B2E1491DCB614310AFDEF8DF32625DB3&ghsh=0&ghacc=0&ghpl=">Đề ôn giữa kì môn Vật Lý</a>
+        </div>
+    </div>
+</body>
+</html>

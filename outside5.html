@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THPT Ernst Thalmann</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            position: relative;
+            font-family: 'Lobster', cursive;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+            }
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #17a2b8;
+            transform: scale(1.1);
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+        }
+
+        .content h1 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 10px; /* Added margin for better spacing */
+        }
+
+        .group-info {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+              border: 2px solid #007bff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                background-color: #f0f0f0;
+                transition: all 0.3s ease;
+            }
+
+            .group-info:hover {
+                transform: scale(1.02);
+                box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+                border-color: #0056b3;
+                background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Trường THPT Ernst Thalmann</h1>
+        <h2>"Thất bại là mẹ thành công"</h2>
+        <div class="logo">
+            <img src="https://84864c160d.vws.vegacdn.vn/UploadImages/thpttenloman/logo/intheuao.png" alt="Logo trường">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="thayco3.html">Giảng viên</a></li>
+            <li><a href="bancansu12a7.html">Ban cán sự</a></li>
+            <li><a href="thanhtuulop2.html">Thành tựu của lớp</a></li>
+            <li><a href="tailieuhoctapcualop.html">Tài liệu học tập</a></li>
+            <li><a href="binhluan.html">Bình luận</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <img src="https://i.imgur.com/iRAq8vU.jpeg" alt="Hoạt động lớp">
+            <h1>Thông tin - Hoạt động của lớp</h1>
+            <p><strong>Cuộc Thi Nghiên Cứu Khoa Học - Kĩ Thuật:</strong> Gia Thảo, Bảo Hân, Đăng Khoa, Bình Trí</p>
+            <p><strong>Đua Thuyền + Ẩm Thực:</strong> Nhật Minh, Minh Quang, Anh Tú, Hải Yến, Gia Huy, Quang Hiển, Ngọc Tân, Anh Thư, Bảo Hân, Hồng Lam</p>
+            <p><strong>Kéo co:</strong> Quang Hiển, Nhật Minh, Thảo Ngọc, Tường Vy, Hải Yến, Thanh Phong, Thiên Phúc, Ngọc Phượng, Đăng Khoa, Quang Trung</p>
+            <p><strong>Bóng rổ:</strong> Nhật Nam, Bình Trí, Thanh Phong, Tấn Tài, Thanh Phong</p>
+        </div>
+          <div class="group-info" style="margin-top: 20px; text-align: center; font-weight: bold;">
+            <p>Nhóm: siêu quậy</p>
+              <p>Được thực hiện bởi</p>
+            <p>Lương Gia Phúc</p>
+            <p>Nguyễn Bình Trí</p>              
+            <p>Nguyễn Thanh Phong</p>              
+            <p>Phạm Ngọc Tường Vy</p>
+            <p>Nguyễn Gia Tuệ</p>
+            <p>Lê Gia Bảo</p>              
+            <p>Lê Trần QUỳnh Như </p>               
+            <p>Lương Thiên Phúc</p>               
+        </div>
+    </div>
+</body>
+
+</html>
